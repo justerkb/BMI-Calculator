@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		399DEC6F2B6E28A200A79B8B /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399DEC6E2B6E28A200A79B8B /* secondViewController.swift */; };
+		399DEC752B6E48DB00A79B8B /* resultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399DEC742B6E48DB00A79B8B /* resultViewController.swift */; };
+		39B710472B77707F00A4C297 /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B710462B77707F00A4C297 /* BMI.swift */; };
+		39FF94FA2B76AC3100681919 /* calculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF94F92B76AC3100681919 /* calculatorBrain.swift */; };
 		AD0B9F7A230D61800065EFD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0B9F79230D61800065EFD9 /* AppDelegate.swift */; };
 		AD0B9F7C230D61800065EFD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0B9F7B230D61800065EFD9 /* SceneDelegate.swift */; };
 		AD0B9F7E230D61800065EFD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0B9F7D230D61800065EFD9 /* ViewController.swift */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		399DEC6E2B6E28A200A79B8B /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
+		399DEC742B6E48DB00A79B8B /* resultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resultViewController.swift; sourceTree = "<group>"; };
+		39B710462B77707F00A4C297 /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
+		39FF94F92B76AC3100681919 /* calculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculatorBrain.swift; sourceTree = "<group>"; };
 		AD0B9F76230D61800065EFD9 /* BMI Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BMI Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD0B9F79230D61800065EFD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD0B9F7B230D61800065EFD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39FF94F82B76AC1300681919 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				39FF94F92B76AC3100681919 /* calculatorBrain.swift */,
+				39B710462B77707F00A4C297 /* BMI.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
 		AD0B9F6D230D61800065EFD9 = {
 			isa = PBXGroup;
 			children = (
@@ -59,9 +76,9 @@
 		AD0B9F78230D61800065EFD9 /* BMI Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				39FF94F82B76AC1300681919 /* models */,
 				AD0B9F79230D61800065EFD9 /* AppDelegate.swift */,
 				AD0B9F7B230D61800065EFD9 /* SceneDelegate.swift */,
-				AD0B9F8F230D63EA0065EFD9 /* Models */,
 				AD0B9F8E230D63E10065EFD9 /* Views */,
 				AD0B9F8D230D63D70065EFD9 /* Controllers */,
 				AD0B9F82230D61840065EFD9 /* Assets.xcassets */,
@@ -75,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				AD0B9F7D230D61800065EFD9 /* ViewController.swift */,
+				399DEC742B6E48DB00A79B8B /* resultViewController.swift */,
+				399DEC6E2B6E28A200A79B8B /* secondViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -85,13 +104,6 @@
 				AD0B9F7F230D61800065EFD9 /* Main.storyboard */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		AD0B9F8F230D63EA0065EFD9 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +178,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39FF94FA2B76AC3100681919 /* calculatorBrain.swift in Sources */,
+				399DEC752B6E48DB00A79B8B /* resultViewController.swift in Sources */,
+				399DEC6F2B6E28A200A79B8B /* secondViewController.swift in Sources */,
+				39B710472B77707F00A4C297 /* BMI.swift in Sources */,
 				AD0B9F7E230D61800065EFD9 /* ViewController.swift in Sources */,
 				AD0B9F7A230D61800065EFD9 /* AppDelegate.swift in Sources */,
 				AD0B9F7C230D61800065EFD9 /* SceneDelegate.swift in Sources */,

@@ -9,13 +9,26 @@
 import UIKit
 
 class resultViewController: UIViewController {
-
+    
+    var calculatorBrain: calculatorBrain?
+    
+    @IBOutlet weak var bmiLabel: UILabel!
+    
+    @IBOutlet weak var recomendationLabel: UILabel!
     override func viewDidLoad() {
-        super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
+        bmiLabel.text = "\(round(((calculatorBrain?.BMI?.BMIValue ?? 0.0) * 10) / 10.0))"
+        recomendationLabel.text = calculatorBrain?.BMI?.advice ?? "error"
+        view.backgroundColor = calculatorBrain?.BMI?.color
+        
+    
     }
     
+    @IBAction func recalculatePressed(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
+
 
     /*
     // MARK: - Navigation

@@ -7,3 +7,9 @@
 //
 
 import Foundation
+import UIKit
+struct BMI {
+    var BMIValue: Float?
+    var advice: String?
+    var color: UIColor?
+}
